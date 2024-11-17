@@ -1,4 +1,4 @@
-import './styles/global.css'
+import '@/styles/global.css'
 import { Link } from '@tanstack/react-router'
 
 function App() {
