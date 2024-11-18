@@ -2,8 +2,8 @@ import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
 import './styles/global.css'
-import { routeTree } from './routeTree.gen' // Import the generated route tree
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { routeTree } from './routeTree.gen' // Import the generated route tree
 
 // Create a new router instance
 const router = createRouter({ routeTree })
@@ -21,7 +21,7 @@ const queryClinet: QueryClient = new QueryClient({
       refetchOnWindowFocus: false,
     },
   },
-});
+})
 
 // Render the app
 const rootElement = document.getElementById('root') as HTMLElement
